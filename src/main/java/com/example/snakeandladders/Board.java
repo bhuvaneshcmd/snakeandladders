@@ -37,6 +37,7 @@ public class Board {
         snakesLadders.set(27,5);
         snakesLadders.set(33,49);
         snakesLadders.set(40,3);
+        snakesLadders.set(42,63);
         snakesLadders.set(43,18);
         snakesLadders.set(50,69);
         snakesLadders.set(54,31);
@@ -56,13 +57,13 @@ public class Board {
     }
 
     int getXCoordinate(int position){
-        if(position >=1 && position <100){
+        if(position >=1 && position <=100){
             return positionCoordinates.get(position).getKey();
         }else
             return -1;
     }
     int getYCoordinate(int position){
-        if(position >=1 && position <100){
+        if(position >=1 && position <=100){
             return positionCoordinates.get(position).getValue();
         }else
             return -1;
